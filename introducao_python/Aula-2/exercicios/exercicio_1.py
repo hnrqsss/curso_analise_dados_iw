@@ -1,14 +1,8 @@
-
-
-
-# valores das compras
-compras = [10.20, 20, 40.70, 50]
-
 # Dicionario pessoa
 pessoa = {
     "Nome": "Henrique",
     "Ano_nascimento": "1990",
-    "Compras": compras,
+    "Compras": [10.20, 20, 40.70, 50],
 }
 
 # Desafio imprimir idade e média das compras
