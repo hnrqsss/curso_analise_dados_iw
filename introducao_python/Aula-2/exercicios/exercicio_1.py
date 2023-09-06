@@ -27,7 +27,4 @@ soma = soma_compras(pessoa['Compras'])
 media = calcular_media(soma, pessoa['Compras'])
 idade = calcular_idade(int(pessoa["Ano_nascimento"]))
 
-
-resultado = "Idade: {}\nMédia das compras: {}".format(idade, media)
-
-print(resultado)
+print("Idade: {}\nMédia das compras: {}".format(idade, media))
