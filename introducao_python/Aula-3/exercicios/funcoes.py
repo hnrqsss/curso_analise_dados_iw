@@ -5,7 +5,7 @@ def subtrair(a, b):
     return a - b
 
 def dividir(a, b):
-    return float(a / b)
+    return a / b
 
 def multiplicar(a, b):
     return a * b
@@ -22,8 +22,8 @@ opcao_escolhida = int(input('Escolha uma opção: \n1 - Somar\n2 - Subtrair\n3 -
 if opcao_escolhida in menu_opcoes:
     resultado = 0
 
-    a = int(input('Digite o primeiro número: '))
-    b = int(input('Digite o segundo número: '))
+    a = float(input('Digite o primeiro número: '))
+    b = float(input('Digite o segundo número: '))
 
     if (opcao_escolhida == 1):
         resultado = soma(a, b)
