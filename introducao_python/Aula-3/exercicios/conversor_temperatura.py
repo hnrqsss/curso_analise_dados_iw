@@ -7,16 +7,16 @@ def converter_celsius(temp, type):
 
 def converter_fahrenheit(temp, type):
     if (type == 'kelvin'):
-        return round(((temp - 32) * 5/9) + 273.15)
+        return round(((temp - 32) * 5/9) + 273.15, 2)
     if (type == 'celsius'):
-        return round((temp - 32)/1.8)
+        return round((temp - 32)/1.8, 2)
     return temp
 
 def converter_kelvin(temp, type):
     if (type == 'celsius'):
         return temp - 273.15
     if (type == 'fahrenheit'):
-        return round(((temp - 273.15)*1.8) + 32)
+        return round(((temp - 273.15)*1.8) + 32, 2)
     return temp 
 
 
