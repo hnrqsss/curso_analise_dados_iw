@@ -2,21 +2,21 @@ def converter_celsius(temp, type):
     if (type == 'fahrenheit'):
         return (temp*1.8) + 32
     if (type == 'kelvin'):
-        return temp + 273
+        return temp + 273.15
     return temp
 
 def converter_fahrenheit(temp, type):
     if (type == 'kelvin'):
-        return ((temp - 32) * 5/9) + 273
-    if (type == 'celcius'):
+        return ((temp - 32) * 5/9) + 273.15
+    if (type == 'celsius'):
         return (temp - 32)/1.8
     return temp
 
 def converter_kelvin(temp, type):
-    if (type == 'celcius'):
-        return temp - 273
+    if (type == 'celsius'):
+        return temp - 273.15
     if (type == 'fahrenheit'):
-        return ((temp - 273)*1.8) + 32
+        return ((temp - 273.15)*1.8) + 32
     return temp 
 
 
