@@ -1,20 +1,23 @@
 def converter_celsius(temp, type):
     if (type == 'fahrenheit'):
         return (temp*1.8) + 32
-    
-    return temp + 273.15
+    if (type == 'kelvin'):
+        return (temp*1.8) + 32
+    return temp
 
 def converter_fahrenheit(temp, type):
     if (type == 'kelvin'):
         return ((temp -32)/1.8) + 273.15
-    
-    return (temp - 32)/1.8
+    if (type == 'celcius'):
+        return (temp - 32)/1.8
+    return temp
 
 def converter_kelvin(temp, type):
     if (type == 'celcius'):
         return temp - 273.15
-    
-    return 1.8*(temp - 273) + 32 
+    if (type == 'fahrenheit'):
+        return temp - 273.15
+    return temp 
 
 
 opcao = input('Escolha o tipo da primeira temperatura\n1 - Celsius\n2 - Fahrenheit\n3 - Kelvin: \n')
